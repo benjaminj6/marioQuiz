@@ -62,14 +62,17 @@ const render = function(state, element) {
 			element.find("#questionTitle").text(quizQuestion.title);
 		});
 	}
-	element.find("#correct").text(state.correct);
-	element.find("#incorrect").text(state.incorrect);
+	element.find(".correct").text(state.correct);
+	element.find(".incorrect").text(state.incorrect);
 	element.find("#questionNumber").text(state.questionNumber + 1);
 	if(state.questionNumber === 1){
 		$(form).addClass('hide');
-		$('.endScreen').removeClass('hide');
-		element.find("#correctFinal").text(state.correct);
-		element.find("#incorrectFinal").text(state.incorrect);
+
+		const endScreen = $('.endScreen')
+
+		endScreen.removeClass('hide');
+		endScreen.find(".correct").text(state.correct);
+		endScreen.find(".incorrect").text(state.incorrect);
 	}
 	//End Screen
 };
