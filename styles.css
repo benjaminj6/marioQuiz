@@ -1,0 +1,69 @@
+* {
+	font-family: 'Open Sans';
+}
+
+
+header h1, .introduction h3, p{
+	text-align: center;
+}
+
+header h1 {
+	font-size: 50px;
+	color: darkblue;
+	font-family: 'Baloo Thambi';
+}
+
+ul {
+	list-style-type: none;
+}
+
+label {
+	padding-left: 2px;
+
+}
+
+.container {
+	border: 2px solid black;
+	background-color: lightblue;
+}
+
+.hide {
+	display: none;
+}
+
+.indicators {
+	font-size: 40px;
+}
+
+button.reset{
+	float:right;
+	margin: 30px;
+}
+
+button.submit{
+	margin-bottom: 20px;
+}
+
+img {
+	opacity: 0.2;
+	height: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#start-quiz{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#questionTitle{
+	margin-bottom: 15px;
+}
+
+.incorrectIndicator{
+	color:red;
+}
+
+.correctIndicator{
+	color:green;
+}
